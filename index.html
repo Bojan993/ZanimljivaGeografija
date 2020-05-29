@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zanimljiva geografija</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="menu row col-12" >
+        <ul>
+            <li class="col-4" id="button1">HALL OF FAME</li>
+            <li class="col-4"><a href="comp.html">IGRA PROTIV KOMPJUTERA</a ></li>
+            <li class="col-4"><a href="">3</a></li>
+        </ul>
+    </div>
+
+    <div id="form_log" class="forms row col-12">
+        <div class="col-4"></div>
+    
+            <form id="fl" >
+                <label>Korisničko ime:</label>
+                <br>
+                <input type="text" id="input_name">
+                <br>
+                <button type="submit" id="button_name">POTVRDI</button>
+            </form>
+        <div class="col-4"></div>
+    
+    </div>
+    <br>
+
+    <div id="form_notion" class="forms row col-12 nema">
+        <div class="col-4"></div>
+            <div id="bord">
+                <form id="fn" > 
+                    <label>Odaberite kategoriju:</label>
+                    <br>
+                    <select name="select_cat" id="select_cat">
+                    <option value="Država" selected>država</option>
+                    <option value="Grad">grad</option>
+                    <option value="Reka">reka</option>
+                    <option value="Planina">planina</option>
+                    <option value="Životinja">životinja</option>
+                    <option value="Biljka">biljka</option>
+                    <option value="Predmet">predmet</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label>Unesi novi pojam:</label>
+                    <br>
+                    <input type="text" id="input_notion">
+                    <br>
+                    <button type="submit" id="button_notion">POTVRDI</button>
+                </form>
+            </div>
+        <div class="col-4"></div>
+    </div>
+
+    <div id="score" class="row nema">
+
+      
+    
+   
+    </div>
+    <footer id="fut">
+            
+    </footer>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script> -->
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyApb-phOWpfH0P6LpXK0m2PRJbYgSoZQig",
+          authDomain: "zgeografija-f9af9.firebaseapp.com",
+          databaseURL: "https://zgeografija-f9af9.firebaseio.com",
+          projectId: "zgeografija-f9af9",
+          storageBucket: "zgeografija-f9af9.appspot.com",
+          messagingSenderId: "37124166329",
+          appId: "1:37124166329:web:32728295440cf0c3f34168",
+          measurementId: "G-JZBE7HXVXQ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        //firebase.analytics();
+        let db = firebase.firestore(); 
+        
+      </script> 
+    <script src="start.js"></script>
+</body>
+</html>
